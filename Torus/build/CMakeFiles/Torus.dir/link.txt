@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/Torus.dir/torus.cpp.o  -o Torus -rdynamic -lGLU -lGL -lSM -lICE -lX11 -lXext -lglut -lXmu -lXi 

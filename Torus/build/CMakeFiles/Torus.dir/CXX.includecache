@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rafama/OpenGL/AG_Piramide/Torus/torus.cpp
+GL/gl.h
+-
+GL/glut.h
+-
+stdlib.h
+-
+

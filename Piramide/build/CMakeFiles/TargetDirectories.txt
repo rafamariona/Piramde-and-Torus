@@ -1,0 +1,1 @@
+/home/rafama/OpenGL/Piramide/build/CMakeFiles/piramide.dir
