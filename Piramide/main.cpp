@@ -105,6 +105,8 @@ void piramide(float a, float b, float c, float d, float e, float f, float g, flo
 
 }
 
+
+
 void init (void){
     glClearColor (0.0, 0.0, 0.0, 0.0);
     glShadeModel(GL_SMOOTH);
@@ -161,8 +163,8 @@ void specialKeys( int key, int x, int y ){
 
 
     //  Solicitar actualización de visualización
-    glutPostRedisplay();
 
+    glutPostRedisplay();
 }
 
 // Función para controlar teclas normales del teclado.
@@ -206,18 +208,21 @@ void keyboard(unsigned char key, int x, int y){
         break;
     case 27:
         exit(0);			// exit
-    }
+    default :
+        piramide(1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 50.0);
+      }
     glutPostRedisplay();
 }
 
 
 // METODO QUE RE DIBUJA LA PANTALLA
 void redraw( void ){
-    //Limpiando la pantalla
-    glClear(GL_COLOR_BUFFER_BIT);
-    // Haciendo uso del metodo menu, pasandoles como paramentro el id
-    keyboard(id_menu[1],X,Y);
-	glutSwapBuffers();
+        //Limpiando la pantalla
+        glClear(GL_COLOR_BUFFER_BIT);
+        // Haciendo uso del metodo menu, pasandoles como paramentro el id
+        keyboard(id_menu[1],X,Y);
+    	  glutSwapBuffers();
+
 }
 
 int main(int argc, char* argv[])
